@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "first_name": "Aditi111",
+      "last_name": "Neole",
+      "mob": "7507106404",
+      "email": "aditin26@gmail.com",
+      "address": "Nagpur",
+      "id": 1
+    },
+    {
+      "first_name": "today",
+      "last_name": "test",
+      "mob": "7987897877",
+      "email": "aditi@gmail.com",
+      "address": "nagpur",
+      "password": "1234",
+      "confirm_pass": "1234",
+      "id": 3
+    },
+    {
+      "first_name": "demo2",
+      "last_name": "demo2",
+      "mob": "3456666",
+      "email": "xyz@gmail.com",
+      "address": "mowad",
+      "id": 4
+    },
+    {
+      "first_name": "test",
+      "last_name": "test",
+      "mob": "8765432108",
+      "email": "test@gmail.com",
+      "address": "Nagpur",
+      "password": "1234",
+      "confirm_pass": "",
+      "id": 5
+    }
+  ]
+}

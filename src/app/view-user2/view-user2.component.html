@@ -1,0 +1,35 @@
+<!-- display user details -->
+<h3 style="margin-top:60px;">
+    User Details
+</h3>
+<div>
+    <table class="table table-bordered table-striped table-hover" style="width:70%; margin:20px; border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>First Name </th>
+                <th>Last Name</th>
+                <th>Mobile Number</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Edit User</th>
+                <th>Delete User</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of user">
+                <td>{{ u.first_name}}</td>
+                <td>{{u.last_name}}</td>
+                <td>{{u.mob}}</td>
+                <td>{{ u.email}}</td>
+                <td>{{u.address}}</td>
+                
+                <td><a class="btn btn-info" [routerLink]="['/userUpdate',u.id]"> Edit </a> </td>
+                <td><a class="btn btn-danger" (click) = "deleteUser(u.id)"> Delete </a> </td>
+    
+            </tr>
+        </tbody>
+    </table>
+    </div>
+ 
+

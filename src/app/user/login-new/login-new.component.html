@@ -1,0 +1,24 @@
+<h1 style="margin-top: 10%;margin-left: 25%;">Please sign in.</h1>
+
+<form [formGroup]="loginForm" style="margin-top: 5%;"  class="form_container" (ngSubmit)="login()">
+    <div class="imgcontainer">
+      <img src="../../../assets/images/avatar.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <input type="text" class="form-control" placeholder="Enter emailID" formControlName="uname" required>
+  
+      
+      <input type="password" class="form-control" placeholder="Enter Password" formControlName="pass" required>
+          
+      <button type="submit">Login</button>
+      
+    </div>
+  
+    
+  </form>
+
+  
+
+  
+  

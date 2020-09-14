@@ -1,0 +1,113 @@
+<html>
+
+<body>
+    <div style="margin-top:3%;">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="https://www.apple.com/" target="_blank">About Us</a></li>
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/register']"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a [routerLink]="['/loginNew']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+     <!-- slider section starts-->
+	<section>
+	  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          
+          <img src="../../assets/images/c1.jpg"  style="width:100%; height:500px;">
+          <div class="carousel-caption">
+            <p class="caption1">Lots to love. Less to spend</p>
+            </div>
+        </div>
+  
+        <div class="item">
+          <img src= "../../assets/images/c2.jpg" alt="Chicago" style="width:100%; height:500px;">
+         <div class="carousel-caption">
+            <!-- <p class="caption1">We have two hands.<br>One to help yourself, <br> -->
+              <!-- the second to help others.</p> -->
+            </div>
+        </div>
+      
+        <div class="item">
+          <img src="../../assets/images/c3.jpg" alt="New york" style="width:100%; height:500px;">
+        <div class="carousel-caption">
+            
+            </div>
+        </div>
+  
+        <div class="item">
+          <img src="../../assets/images/c4.jpg" alt="New york" style="width:100%; height:500px;">
+          <div class="carousel-caption">
+            <!-- <p class="caption1">The measure of life is not <br>its duration but donation</p> -->
+            </div>
+        </div>
+
+        <div class="item">
+          <img src="../../assets/images/c5.jpg" alt="New york" style="width:100%; height:500px;">
+          <div class="carousel-caption">
+            <p class="caption3">"Powerful devices <br>that enable you to<br>do more."</p>
+            </div>
+        </div>
+
+
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+    </section>
+    <!-- slider section starts-->
+    
+    <div class="blogContainer"> 
+      <h2 class="blogHeading">Starting at &#x20b9;30000</h2>
+      <a href="#productBox" class="btn btn-primary buyBtn">Buy Now</a>
+    </div>
+
+    <!-- product cart starts -->
+    <div class="productBox" id="productBox">
+     <h2 style="text-align: center;padding-bottom: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Choose Product </h2>  
+     <div class="row productBoxRow" *ngFor="let p of product">
+       <div class="col-sm-3">
+        <center><img class="prod_img" src="{{p.imagePath}}"></center>
+        <p class="info" style="padding-top:5px ;"><b>Model Name:</b> {{p.model_name}}</p>
+        <p class="info"><b>Price :</b> &#x20b9; {{p.price}}</p>
+        <button class="btn btn-primary" style="background:black;">Add to Cart</button>
+       </div>
+      </div>
+    </div>
+      
+    
+     
+</body>
+
+</html>
+
+<app-footer></app-footer>

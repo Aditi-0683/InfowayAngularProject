@@ -1,0 +1,39 @@
+.a1{
+    border:1 px solid black;
+    padding:30px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    top:10%;
+    left:40%;
+    font-size: 25px;
+    border-radius: 50px;
+}
+
+.a2{
+    border:1 px solid black;
+    padding:30px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    top:50%;
+    left:40%;
+    font-size: 25px;
+    border-radius: 50px;
+    
+}
+
+.a3{
+    border:1 px solid black;
+    padding:30px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    top:70%;
+    left:40%;
+    font-size: 25px;
+    border-radius: 50px;
+}

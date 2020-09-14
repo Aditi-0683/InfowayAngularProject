@@ -1,0 +1,105 @@
+<div class="container">
+  <h3 class="prodh3">Add Product Details</h3>
+  <br />
+  <form [formGroup]="form" (ngSubmit)="register()">
+    <div class="form-group">
+      <label class="control-label col-sm-2">Brand Name</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="brand_name" disabled placeholder="Enter brand name">
+      </div>
+
+      <label class="control-label col-sm-2">Model Name</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="model_name" placeholder="Enter model name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Price </label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="price" placeholder="Enter price">
+      </div>
+
+      <label class="control-label col-sm-2">Front Camera</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="front_cam" placeholder="front camera(MP)">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Back Camera</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="back_cam" placeholder="back camera(MP)">
+      </div>
+
+      <label class="control-label col-sm-2">Display Size</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="display_size" placeholder="size in inch">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Internal Storage</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="internal_storage" placeholder="Internal storage(GB)">
+      </div>
+
+      <label class="control-label col-sm-2">Ram</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="ram" placeholder="ram(GB)">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Battery Capacity</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="battery" placeholder="battery capacity">
+      </div>
+
+      <label class="control-label col-sm-2">Operating System</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="os" placeholder="operating system">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Chip Version</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="chip" placeholder="Chip version">
+      </div>
+
+      <label class="control-label col-sm-2">Sensor Type</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="sensor" placeholder="sensor type">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Model color</label>
+      <div class="col-sm-4">
+        <select formControlName="color" class="form-control">
+          <option *ngFor="let c of color" [value]="c">
+            {{c}}
+          </option>
+        </select>
+      </div>
+
+      <label class="control-label col-sm-2">Upload Image</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" formControlName="imagePath">
+      </div>
+     
+    </div>
+ <!-- <img src="../../assets/images/iphoneSE.jpeg">  -->
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary btnsubmit">ADD</button>
+      </div>
+    </div>
+  </form>
+</div>

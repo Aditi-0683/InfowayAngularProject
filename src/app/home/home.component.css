@@ -1,0 +1,63 @@
+.productBox{
+    width:100%;
+    height:800px;
+    margin-right:5%;
+    /* background:black; */
+
+}
+.productBoxRow{
+    float: left;
+    margin:20px;
+    margin-left:3%;
+    padding:5px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    width: 250px;
+}
+
+.info{
+    width: 200px;
+}
+
+.caption1{
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 30%;
+
+}
+
+.buyBtn{
+    width: 150px;
+    height: 40px;
+    border:1 px solid black;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.blogHeading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left:28%;
+    padding-top:5%;
+    font-size: 40px;
+}
+
+.caption3{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 6%;
+    margin-right: 76%;
+    color:#e0d3af;
+}
+
+.blogContainer{
+    width: 100%;
+    height: 420px;
+    margin-left:10px ;
+    background-image: url("../../assets/images/c6.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+

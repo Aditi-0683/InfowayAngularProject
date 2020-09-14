@@ -1,0 +1,30 @@
+<h3 style="margin-top:60px;">
+    Product Details
+</h3>
+<div>
+    <table class="table table-bordered table-striped table-hover" style="width:70%; margin:20px; border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>Model Name</th>
+                <th>Price</th>
+                <th>color</th>
+                <th>Image</th>
+                <th>Edit Product</th>
+                <th>Delete Product</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of product">
+                <td>{{ p.model_name}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.color}}</td>
+                <td>{{ p.imagePath}}</td>
+                <td><a class="btn btn-info" [routerLink]="['/update',p.id]"> Edit </a> </td>
+                <td><a class="btn btn-danger" (click) = "deleteProduct(p.id)"> Delete </a> </td>
+    
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+
